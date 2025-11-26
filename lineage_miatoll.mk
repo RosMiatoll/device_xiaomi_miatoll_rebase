@@ -27,10 +27,15 @@ PRODUCT_MODEL := SM6250
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
+# Rising Flags
 RISING_MAINTAINER="AbdoElbanaa"
 PRODUCT_BUILD_PROP_OVERRIDES += \
     RisingChipset="Snapdragon 720G" \
     RisingMaintainer="$(RISING_MAINTAINER)"
+
+# CORE build flags
+WITH_GMS := true
+TARGET_USES_PICO_GAPPS := true
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildDesc="miatoll_global-user 12 SKQ1.211019.001 V14.0.3.0.SJZMIXM release-keys" \
